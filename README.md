@@ -23,7 +23,7 @@
 
 ### Live Demo
 
-Check out the live demo [here](link_to_live_demo).
+Check out the live demo [here](https://nzyoka10.github.io/css_margin_padding/).
 
 ### Project Tasks
 
