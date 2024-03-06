@@ -1,24 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* General Styles */
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
   background-color: #333;
-  //color: wheat;
   margin: 0;
   padding: 0;
 }
 
 /* Header Styles */
 header {
-    cursor: pointer;
+  cursor: pointer;
   background-color: #333;
   padding: 20px;
   color: wheat;
   text-align: center;
-  font-size: 2.8 em;
+  font-size: 2.8em;
   letter-spacing: .9em;
 }
 
@@ -27,6 +27,7 @@ header h1 {
   padding: 8px;
   text-transform: uppercase;
   font-family: "Anta", sans-serif;
+  font-size: 1em;
   font-weight: 600;
   font-style: normal;
 }
@@ -37,20 +38,21 @@ h1, h2, h3, h4, h5, h6 {
 
 nav {
   background-color: #444;
+  margin: 3px;
+  border-radius: 12px;
   padding: 10px 0;
   text-align: center;
 }
 
 nav a {
   color: wheat;
-  font-size: 1 em;
+  font-size: 1em;
   text-decoration: none;
   margin: 0 20px;
+  letter-spacing: .2em;
 }
 
 nav a:hover {
-  //text-decoration: underline;
-
   border-bottom: 3px solid;
   color: #bc8f8f;
   border-radius: 12px;
@@ -60,34 +62,38 @@ nav a:hover {
 #content-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   padding: 14px;
 }
 
 /* Introduction Styles */
+#introduction h2{
+  font-size: 1.4em;
+  text-transform: uppercase;
+  letter-spacing: .6em;
+  color: wheat;
+  text-align: center; 
+}
+
 #introduction {
   background-color: #444;
-  color: wheat;
+  color: azure;
   padding: 20px;
   margin: 20px 0;
   flex: 1;
   margin-right: 20px;
-
   border-radius: 12px;
-  word-wrap: normal;
 }
 
 ol li{
-    text-align: center;
-    color: wheat;
-    text-decoration: none;
-    list-style-type: none;
-
-    border: 1px solid #7c7a7a;
-    border-radius: 6px;
-    padding: 10px;
+  text-align: center;
+  color: wheat;
+  text-decoration: none;
+  list-style-type: none;
+  border: 1px solid #7c7a7a;
+  border-radius: 6px;
+  padding: 10px;
   margin-bottom: 10px;
-
   text-transform: capitalize;
   letter-spacing: .7em;
   cursor: pointer;
@@ -100,12 +106,19 @@ ol li:hover{
 }
 
 /* Skills Styles */
+#skills h2{
+  font-size: 1.4em;
+  text-transform: uppercase;
+  letter-spacing: .6em;
+  color: wheat;
+  text-align: center; 
+}
+
 #skills {
   background-color: #444;
   padding: 20px;
   margin: 20px 0;
   flex: 1;
-
   border-radius: 12px ;
   color: wheat;
 }
@@ -119,42 +132,67 @@ ul li {
   border: 1px solid #bc8f8f;
   border-radius: 6px;
   cursor: pointer;
-
-  padding: 10px;
+  padding: 12px;
+  margin: 4px;
   margin-bottom: 10px;
 }
 
+ul li:hover{
+  background-color: #bc8f8f;
+  color: #444;
+  font-weight: 600;
+}
+
 /* Projects Section Styles */
-#projects {
-  background-color: #e6dbdb;
-  padding: 20px;
-  //margin: 20px 0;
-
-  margin: 12px;
-  border-radius: 12px;
-}
-
-.project {
-  margin-bottom: 20px;
-
-
-  border: 1px solid #444;
-  border-radius: 12px;
-  padding: 24px;
-}
-
-#projects h2, h3{
-    font-size: 1.6em;
-    color: #333;
-}
-
-.project h3 {
-  margin-top: 0;
-
+#projects h2{
   font-size: 1.4em;
+  text-transform: uppercase;
+  letter-spacing: .6em;
+  color: wheat;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: calc(50% - 20px); /* Adjust width as needed */
+  margin: 10px; /* Adjust margin between cards*/
+  padding: 20px; /* Add padding of cards*/
+  background-color: #444;
+  border: 1px solid #333;
+  border-radius: 8px;
+  border-color: #bc8f8f;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: wheat;
+}
+
+.card p {
+  margin-bottom: 10px;
+  color: azure;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 /* Contact Section Styles */
+#contact h2{
+  font-size: 1.4em;
+  text-transform: capitalize;
+  letter-spacing: .6em;
+  color: wheat;
+  text-align: center;
+}
+
 footer {
   background-color: #333;
   margin: 8px;
@@ -164,24 +202,30 @@ footer {
 }
 
 footer p span{
-    color: #bc8f8f;
-    font-size: .9em;
-    font-weight: 600;
-    text-align: start;
+  color: #bc8f8f;
+  font-size: .9em;
+  font-weight: 600;
+  text-align: start;
 }
 
 footer p a{
-    color: wheat;
-    text-decoration: none;
+  color: wheat;
+  text-decoration: none;
 }
 
 footer p a:hover{
-    color: #bc8f8f;
+  color: #bc8f8f;
 }
 
 /* Responsive Design */
-@media only screen and (max-width: 600px) {
-  header, #introduction, #skills, #projects, footer {
+@media only screen and (max-width: 768px) {
+  header,
+  nav,
+  #content-container,
+  #introduction,
+  #skills,
+  #projects,
+  footer {
     padding: 10px;
   }
   li {
@@ -190,7 +234,11 @@ footer p a:hover{
   #content-container {
     flex-direction: column;
   }
-  #introduction, #skills {
+  #introduction,
+  #skills {
     margin-right: 0;
+  }
+  .card {
+    width: calc(100% - 20px); /* Full width on smaller screens */
   }
 }
